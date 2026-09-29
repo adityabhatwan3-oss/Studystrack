@@ -1,101 +1,150 @@
 # StudyTrack
 
-## 1\. Project Title
-
+## Project Title
 **StudyTrack – A Basic Student Study Management System**
 
-## 2\. Overview of the Project
+## Overview
+StudyTrack is a simple Python program made to help students manage their study tasks and keep track of their study time.
 
-studyTrack is a simple Python program for students. It helps them add tasks, complete tasks, record study time, and check their total study time.
+The program has a menu where students can add tasks, view their tasks, mark tasks as completed, add study sessions, and see their total study time. The project is made using basic Python concepts covered in the Python Essentials course.
 
-## 3\. Features
+## Features
 
-Add a new task
-Enter task details
-View all tasks
-Mark a task as completed
-Add study time
-View study sessions
-See total study time
-Show error messages for wrong inputs
+- Add a new study task
+- Enter task title, subject, due date, and priority
+- View all added tasks
+- Mark a selected task as completed
+- Add a study session with subject and time in minutes
+- View recorded study sessions
+- Calculate and display total study time
+- Handle invalid task numbers and invalid menu choices
 
-## 4\. Technologies / Tools Used
+## Technologies / Tools Used
 
-* **Python**
-* Python Lists
-* Python Functions
-* `input()` and `print()`
-* `if / elif / else`
-* `for` loop
-* `while` loop
-* Basic arithmetic
+- **Python**
+- Python lists
+- Python functions
+- `input()` and `print()`
+- `if / elif / else`
+- `for` loop
+- `while` loop
+- Basic arithmetic
 
-## 5\. Steps to Install \& Run the Project
+## Project Structure
+
+The current project is a simple Python program and mainly contains:
+
+- `main.py` – contains the complete StudyTrack program
+
+The program uses two lists during execution:
+
+- `tasks = []` – stores task details
+- `study_sessions = []` – stores subject and study-time details
+
+## How to Install and Run
 
 ### Requirements
 
-* Python 3 installed on the computer
-* Any Python editor or terminal
+- Python 3 installed on your computer
+- Any Python editor or terminal
 
 ### Steps
 
-1. Download the project.
+1. Download or clone this project.
 2. Open the project folder.
-3. Open the `main.py` file.
-4. Run the program using a Python editor or terminal.
+3. Open `main.py` in a Python editor or terminal.
+4. Run the program.
 
-In the terminal, use:
+For terminal, use:
 
 ```bash
 python main.py
 ```
 
-If required, use:
+If your system uses `python3`, you can use:
 
 ```bash
 python3 main.py
 ```
 
-## 6\. Instructions for Testing
+## How to Use
 
-Run the program and test each menu option one by one.
+After starting the program, the main menu is displayed:
 
-### Test 1 – Add Task
+```text
+===== STUDYTRACK =====
+1. Add Task
+2. Show Tasks
+3. Complete Task
+4. Add Study Session
+5. Show Study Sessions
+6. Exit
+```
 
-1. Select **1. Add Task**.
-2. Enter the task, subject, due date, and priority.
-3. Check that the task is added with **Pending** status.
+Enter the number of the operation you want to perform.
 
-### Test 2 – Show Tasks
+### Add Task
 
-1. Select **2. Show Tasks**.
-2. Check that the added task details are displayed.
+The program asks for:
 
-### Test 3 – Complete Task
+- Task
+- Subject
+- Due date
+- Priority
 
-1. Select **3. Complete Task**.
-2. Enter the task number.
-3. Check that the selected task status changes to **Completed**.
+The task is then stored with a **Pending** status.
 
-### Test 4 – Add Study Session
+### Show Tasks
 
-1. Select **4. Add Study Session**.
-2. Enter the subject and study time in minutes.
-3. Check that the study session is added.
+This option displays the tasks that have been added, along with their subject, due date, priority, and status.
 
-### Test 5 – Show Study Sessions
+### Complete Task
 
-1. Select **5. Show Study Sessions**.
-2. Check that the study sessions and total study time are displayed.
+Enter the task number to change its status from **Pending** to **Completed**.
 
-### Test 6 – Invalid Task Number
+### Add Study Session
 
-1. Select **3. Complete Task**.
-2. Enter an invalid task number.
-3. Check that the program displays an invalid task number message.
+Enter the subject and the amount of study time in minutes. The session is stored in the program.
 
-### Test 7 – Invalid Menu Choice
+### Show Study Sessions
 
-1. Enter a menu number that is not between 1 and 6.
-2. Check that the program displays **Invalid choice!**.
+This option displays the recorded study sessions and calculates the total study time in minutes.
 
+## Testing
+
+The program can be tested using normal inputs for all six menu options.
+
+The following cases should be checked:
+
+| Test | Action | Expected Result |
+|---|---|---|
+| 1 | Add Task | Task is added with Pending status |
+| 2 | Show Tasks | Task details are displayed |
+| 3 | Complete Task | Selected task becomes Completed |
+| 4 | Add Study Session | Study session is stored |
+| 5 | Show Study Sessions | Sessions and total study time are displayed |
+| 6 | Invalid task number | Invalid task number message is displayed |
+| 7 | Invalid menu choice | Invalid choice message is displayed |
+
+## Important Note
+
+StudyTrack currently stores its data in lists while the program is running. The current version does not use a database or permanent file storage, so the stored tasks and study sessions are not saved after the program is closed.
+
+## Future Enhancements
+
+Some features that can be added in the future are:
+
+- Save tasks and study sessions permanently in a file
+- Add a graphical user interface
+- Add reminders for pending tasks
+- Add daily and subject-wise study statistics
+- Improve input validation for incorrect values
+
+## Project Purpose
+
+This project was made as part of the **Python Essentials** course to understand how basic Python concepts can be used together to create a simple working application.
+
+## References
+
+- VITyarthi – Build Your Own Project: General Project Instructions & Submission Guidelines
+- Python Essentials course concepts and classroom material
