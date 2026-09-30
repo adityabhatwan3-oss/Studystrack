@@ -1,33 +1,48 @@
-# StudyTrack
+# Study Track
 
 ## Project Title
-**StudyTrack – A Basic Student Study Management System**
+**Study Track – A Basic Student Study Management System**
 
 ## Overview
-StudyTrack is a simple Python program made to help students manage their study tasks and keep track of their study time.
+Study Track is a simple Python program made to help student manage their study tasks and keep track of their study time.
 
 The program has a menu where students can add tasks, view their tasks, mark tasks as completed, add study sessions, and see their total study time. The project is made using basic Python concepts covered in the Python Essentials course.
 
 ## Features
 
+
 - Add a new study task
-- Enter task title, subject, due date, and priority
+
+- Enter task titl, subject, due date, and priority
+
 - View all added tasks
+
 - Mark a selected task as completed
+
 - Add a study session with subject and time in minutes
+
 - View recorded study sessions
+
 - Calculate and display total study time
+
 - Handle invalid task numbers and invalid menu choices
 
 ## Technologies / Tools Used
 
 - **Python**
+
 - Python lists
+
 - Python functions
+
 - `input()` and `print()`
+
 - `if / elif / else`
+
 - `for` loop
+
 - `while` loop
+
 - Basic arithmetic
 
 ## Project Structure
@@ -74,10 +89,15 @@ After starting the program, the main menu is displayed:
 ```text
 ===== STUDYTRACK =====
 1. Add Task
+
 2. Show Tasks
+
 3. Complete Task
+
 4. Add Study Session
+
 5. Show Study Sessions
+
 6. Exit
 ```
 
@@ -96,7 +116,7 @@ The task is then stored with a **Pending** status.
 
 ### Show Tasks
 
-This option displays the tasks that have been added, along with their subject, due date, priority, and status.
+This option displays the tasks that have been add, along with their subject, due date, priority, status.
 
 ### Complete Task
 
@@ -104,15 +124,15 @@ Enter the task number to change its status from **Pending** to **Completed**.
 
 ### Add Study Session
 
-Enter the subject and the amount of study time in minutes. The session is stored in the program.
+Enter the subject and the amount of study time in minute. The session is stored in the program.
 
 ### Show Study Sessions
 
-This option displays the recorded study sessions and calculates the total study time in minutes.
+This option displays the recorded study sessions and calculates the total study time in minute.
 
 ## Testing
 
-The program can be tested using normal inputs for all six menu options.
+The program can be tested using normal inputs for all six menu option.
 
 The following cases should be checked:
 
@@ -128,7 +148,7 @@ The following cases should be checked:
 
 ## Important Note
 
-StudyTrack currently stores its data in lists while the program is running. The current version does not use a database or permanent file storage, so the stored tasks and study sessions are not saved after the program is closed.
+Study Track currently stores its data in lists while the program is running. The current version does not use a database or permanent file storage, so the stored tasks and study sessions are not saved after the program is closed.
 
 ## Future Enhancements
 
